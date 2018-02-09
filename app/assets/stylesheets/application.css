@@ -1,0 +1,79 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+*{
+  font-family:'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 20px;
+  color: #FFF;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+h1 {
+  color: #d2e0f4;
+  text-shadow: grey 2px 2px;
+  font-size: 3em;
+
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+  height: 300px;
+  font-size: 20px;
+  table-layout: auto;
+  border-collapse: collapse;
+}
+.table-header{
+  background-color: rgba(255,255,255,0.3);
+
+}
+.table-content{
+  height: 100%;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.1)
+}
+a {
+  text-decoration: none;
+}
+a:hover{
+  font-size: 1.25em;
+}
+td {
+  padding: 20px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 400;
+  font-size: 15px;
+  color: #FFF;
+  border-bottom: solid 1px #eff1f4;
+  border-top: solid 1px #eff1f4;
+
+}
+body{
+  background: -webkit-linear-gradient(left, #074cb5, #c6d8f2);
+  background: linear-gradient(to right, #0267ff, #b7d0f7);
+  font-family: 'Roboto', sans-serif;
+}
+.des {
+  text-decoration: none;
+}
+table td.shrink{
+  white-space: normal;
+}

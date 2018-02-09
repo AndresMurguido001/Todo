@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<header>
+  <h1>Tasks</h1>
+</header>
+
+
+<div class="table-header">
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th colspan="1.5">Description</th>
+    </tr>
+  </thead>
+  </div>
+<div class="table-content">
+  <tbody>
+    <% @tasks.each do |task| %>
+      <tr>
+        <td class="shrink"><%= task.title %></td>
+        <td class="shrink"><%= task.Description %></td>
+        <td class="shrink"><%= link_to 'Show', task %></td>
+        <td class="shrink"><%= link_to 'Edit', edit_task_path(task) %></td>
+        <td class="shrink"><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+
+<br>
+
+<button type="button" name="button"><%= link_to 'New Task', new_task_path %></button>
